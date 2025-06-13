@@ -1,1 +1,1 @@
-# multi-UGV-autonomous-exploration
+# turtlebot3-autonomous-exploration
