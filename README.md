@@ -107,3 +107,26 @@ To change the simulated world:
    - `turtlebot3_custom_house.launch.py` *(default)*
 
 ---
+
+## 📦 Extra
+
+### 📘 Documentation
+You can download the full project documentation (PDF), which includes detailed architecture, algorithm explanations, and evaluation results:
+
+👉 [Download PDF Documentation]([https://drive.google.com/uc?export=download&id=YOUR_FILE_ID](https://drive.google.com/file/d/1F-WNgeTULFckyANYI3nwbSxdwaiNglk-/view?usp=share_link))
+
+### 🎥 Simulation Demo
+A demonstration video showing the robot performing autonomous exploration across different simulated environments is available here:
+
+👉 [Watch on YouTube](https://youtu.be/YOUR_VIDEO_ID)
+
+[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://youtu.be/YOUR_VIDEO_ID)
+
+### 🔗 References
+- [TurtleBot3 Documentation](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
+- [Nav2 Stack](https://navigation.ros.org/)
+- [SLAM Toolbox](https://github.com/SteveMacenski/slam_toolbox)
+- [robot_localization Package](http://docs.ros.org/en/noetic/api/robot_localization/html/index.html)
+
+---
+
