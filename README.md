@@ -118,7 +118,7 @@ You can download the full project documentation (PDF), which includes detailed a
 ### 🎥 Simulation Demo
 A demonstration video showing the robot performing autonomous exploration across different simulated environments is available here:
 
-👉 [Watch on YouTube]([https://youtu.be/YOUR_VIDEO_ID](https://youtu.be/_6K4ttu2d38))
+👉 [Watch on YouTube](https://youtu.be/_6K4ttu2d38)
 
 ### 🔗 References
 - [TurtleBot3 Documentation](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
