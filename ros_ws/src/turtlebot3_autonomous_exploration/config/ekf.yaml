@@ -1,0 +1,32 @@
+ekf_filter_node:
+  ros__parameters:
+    frequency: 30.0  # Frequency at which the EKF publishes its estimated state (30 Hz)
+    sensor_timeout: 0.1  # Time (in seconds) before considering a sensor as timed out (100 ms)
+    two_d_mode: true  # Enables 2D mode: ignores Z, roll, and pitch (assumes flat ground)
+    publish_tf: true  # Publishes the transform between world_frame and base_link_frame
+    map_frame: map  # Global reference frame 
+    odom_frame: odom  # Intermediate frame from wheel odometry or similar
+    base_link_frame: base_footprint  # The robot's physical frame
+    world_frame: odom  # Frame used as the EKF's output reference (can be map or odom)
+
+    # --- FIRST SENSOR: ODOMETRY ---
+    odom0: /odom  # Topic name of the odometry input
+
+    # Configuration flags for /odom input (15 booleans):
+    # [x, y, z, roll, pitch, yaw,  vx, vy, vz,  vroll, vpitch, vyaw,  ax, ay, az]
+    odom0_config: [true,  true,  false,     # Use position x, y; ignore z
+                   false, false, true,      # Use only yaw from orientation
+                   true,  true,  false,     # Use linear velocity in x and y; ignore z
+                   false, false, true,      # Use angular velocity around z (yaw); ignore roll/pitch
+                   false, false, false]     # Don't use linear accelerations
+
+    # --- SECOND SENSOR: IMU ---
+    imu0: /imu  # Topic name of the IMU input
+
+    # Configuration flags for /imu input (15 booleans):
+    # [x, y, z, roll, pitch, yaw,  vx, vy, vz,  vroll, vpitch, vyaw,  ax, ay, az]
+    imu0_config: [false, false, false,     # Do not use position from IMU 
+                  true,  true,  true,      # Use full orientation: roll, pitch, yaw
+                  false, false, false,     # Don't use linear velocity from IMU
+                  true,  true,  true,      # Use angular velocity (gyro): roll, pitch, yaw
+                  true,  true,  true]      # Use linear acceleration (accelerometer): x, y, z

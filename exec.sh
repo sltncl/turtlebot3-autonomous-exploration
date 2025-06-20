@@ -1,0 +1,1 @@
+docker exec -it tb3_autonomous_exploration bash
