@@ -113,7 +113,7 @@ To change the simulated world:
 ### 📘 Documentation
 You can download the full project documentation (PDF), which includes detailed architecture, algorithm explanations, and evaluation results:
 
-👉 [Download PDF Documentation](https://drive.google.com/file/d/1F-WNgeTULFckyANYI3nwbSxdwaiNglk-/view?usp=share_link)
+👉 [Download PDF Documentation](https://drive.google.com/file/d/1RO_DDxVoqxmUgYrFS5n_XIksy5xwx6Mc/view?usp=share_link)
 
 ### 🎥 Simulation Demo
 A demonstration video showcasing the robot performing autonomous exploration across different simulated environments is available below.
