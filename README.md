@@ -122,9 +122,9 @@ A demonstration video showing the robot performing autonomous exploration across
 
 ### 🔗 References
 - [TurtleBot3 Documentation](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
-- [Nav2 Stack](https://navigation.ros.org/)
+- [Nav2 Stack](https://docs.nav2.org)
 - [SLAM Toolbox](https://github.com/SteveMacenski/slam_toolbox)
-- [robot_localization Package](http://docs.ros.org/en/noetic/api/robot_localization/html/index.html)
+- [robot_localization Package](https://github.com/cra-ros-pkg/robot_localization)
 
 ---
 
