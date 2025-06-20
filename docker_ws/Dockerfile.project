@@ -4,7 +4,7 @@ FROM ros:jazzy
 # Install RViz2 for real-time 3D visualization of robot data
 RUN apt update -y && apt install -y ros-jazzy-rviz2
 
-# Install basic tools (e.g., wget for downloading additional resources if needed)
+# Install basic tools (wget for downloading additional resources if needed)
 RUN apt update -y && apt install -y wget
 
 # Install SLAM Toolbox for online and offline 2D SLAM mapping
@@ -19,8 +19,5 @@ RUN apt update -y && apt install -y ros-jazzy-ros-gz
 # Install robot_localization for sensor fusion (IMU + odometry)
 RUN apt update -y && apt install -y ros-jazzy-robot-localization
 
-# Install pip for managing additional Python dependencies
-RUN apt update -y && apt install -y python3-pip
-
 # Install numpy
-RUN python3 -m pip install numpy
+RUN apt update -y && apt install -y python3-numpy
