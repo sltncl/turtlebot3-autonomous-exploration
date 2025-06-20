@@ -18,7 +18,7 @@
 - Includes robot models and launch files to spawn TurtleBot3 in a Gazebo simulation and establish communication with ROS.
 
 **Modifications:**
-- In the `params/` folder, portions of code in `turtlebot3_burger_bridge` related to TF bridging between Gazebo and ROS have been commented out, as this functionality is now handled by `robot_localization`.
+- In the `params/` folder, portions of code in `turtlebot3_burger_bridge.yaml` related to TF bridging between Gazebo and ROS have been commented out, as this functionality is now handled by `robot_localization`.
 - Added a custom simulation world `custom_house.world` in the `worlds/` directory.
 - Modified launch files:
   - `turtlebot3_world.launch.py`: Commented out Gazebo client to reduce simulation load (runs only server).
